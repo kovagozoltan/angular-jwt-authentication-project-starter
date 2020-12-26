@@ -5,14 +5,16 @@
       <b>Email</b>
     </label>
     <br>
-    <input type="text" name="email" id="email" placeholder="Email">
+    <input [(ngModel)]="userData.email" type="email" name="email" id="email" placeholder="Email">
     <br><br>
     <label>
       <b>Password</b>
     </label>
     <br>
-    <input type="Password" name="Pass" id="Pass" placeholder="Password">
+    <input [(ngModel)]="userData.password" type="password" name="password" id="password" placeholder="Password">
     <br><br>
-    <input type="button" name="log" id="log" value="Log In Here">
+    <button type="button" (click)="loginUser()">Login</button>
+    <br><br>
+    <a routerLink="/signup">Sign Up!</a>
   </form>
 </div>

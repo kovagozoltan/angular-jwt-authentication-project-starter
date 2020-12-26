@@ -14,10 +14,6 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: '**',
-    component: LoginComponent
-  },
-  {
     path: 'signup',
     component: SignupComponent
   },
@@ -29,6 +25,10 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: '**',
+    component: LoginComponent
   }
 ];
 

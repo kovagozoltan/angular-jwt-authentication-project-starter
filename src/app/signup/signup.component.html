@@ -1,1 +1,20 @@
-<p>signup works!</p>
+<h2>SignUp Page</h2>
+<div class="login">
+  <form id="login">
+    <label>
+      <b>Email</b>
+    </label>
+    <br>
+    <input [(ngModel)]="userData.email" type="email" name="email" id="email" placeholder="Email">
+    <br><br>
+    <label>
+      <b>Password</b>
+    </label>
+    <br>
+    <input [(ngModel)]="userData.password" type="password" name="password" id="password" placeholder="Password">
+    <br><br>
+    <button type="button" (click)="signupUser()">Sign Up!</button>
+    <br><br>
+    <a routerLink="/login">Login!</a>
+  </form>
+</div>
